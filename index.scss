@@ -1,6 +1,6 @@
 * {
     font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
+    
     box-sizing: border-box;
 }
 
@@ -12,14 +12,22 @@ body {
 }
 
 .projectPreview {
-    width: 200px;
+    overflow: hidden;
+    width: auto;
     height: 200px;
     border: 3px solid black;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
-        object-fit: fill;
-        height: 200px;
-        transform: translate(-110px, 0);
+        object-fit: cover;
+        height: 250px;
+        transform: translate(-100px, 0);
+        transition: height 350ms;
+    }
+    img:hover {
+        height:260px;
     }
 }
 
@@ -30,4 +38,28 @@ body {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     width: 80%;
+    gap: 3px;
+}
+
+@media (max-width: 1269px){
+    body {
+        flex-direction: column;
+    }
+    .projectPreview img {
+        
+        transform: translate(-20px, 0)
+    }
+}
+
+@media (max-width: 700px){
+    #linkContainer {
+        grid-template-columns: auto;
+    }
+    .projectPreview img {
+        height: 350px;
+        // transform: translate(100px, 0)
+    }
+    .projectPreview img:hover {
+        height: 370px;
+    }
 }
