@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="index.css">
         <title>Joseph Stipich</title>
     </head>
@@ -12,50 +13,79 @@
             <!-- animate mouseover previews zoom out, bisecting buttons fade in,
              link to page itself or github repo -->
             <div class="projectPreview">
+                <div class="labels" id="treemapLabel">
+                    <span>d3 Treemap Diagram</span>
+                </div>
                 <a href="https://joeystip.github.io/d3TreemapDiagram/">
-                    <img src="./Pictures/d3treemapScreenshot.png"/>
+                    <img id="treemap" src="./Pictures/d3treemapScreenshot.png"/>
                 </a>
             </div>
             <div class="projectPreview">
+                <div class="labels" id="ChoroplethLabel">
+                    <span>d3 Choropleth Map</span>
+                </div>
                 <a href="https://joeystip.github.io/d3Choropleth/">
-                    <img src="./Pictures/d3ChoroplethScreenshot.png"/>
+                    <img id="Choropleth" src="./Pictures/d3ChoroplethScreenshot.png"/>
                 </a>
             </div>
             <div class="projectPreview">
+                <div class="labels" id="GDPChartLabel">
+                    <span>d3 GDP Bar Chart</span>
+                </div>
                 <a href=" https://joeystip.github.io/GDPBarChart/">
-                    <img src="./Pictures/d3GDPBarChartScreenshot.png"/>
+                    <img id="GDPChart" src="./Pictures/d3GDPBarChartScreenshot.png"/>
                 </a>
             </div>
             <div class="projectPreview">
+                <div class="labels" id="ProdClockLabel">
+                    <span>Productivity Clock</span>
+                </div>
                 <a href="https://joeystip.github.io/productivity-clock/">
-                    <img src="./Pictures/ProductivityClockScreenshot.png"/>
+                    <img id="ProdClock" src="./Pictures/ProductivityClockScreenshot.png"/>
                 </a>
             </div>
             <div class="projectPreview">
+                <div class="labels" id="JSCalcLabel">
+                    <span>JavaScript Calculator</span>
+                </div>
                 <a href="https://joeystip.github.io/JSCalc/">
-                    <img src="./Pictures/JScalcScreenshot.png"/>
+                    <img id="JSCalc" src="./Pictures/JScalcScreenshot.png"/>
                 </a>
             </div>
             <div class="projectPreview">
+                <div class="labels" id="MarkdownPreviewerLabel">
+                    <span>React Markdown Previewer</span>
+                </div>
                 <a href="https://joeystip.github.io/MarkdownPreviewer/">
-                    <img src="./Pictures/MarkdownPreviewerScreenshot.png"/>
+                    <img id="MarkdownPreviewer" src="./Pictures/MarkdownPreviewerScreenshot.png"/>
                 </a>
             </div>
             <div class="projectPreview">
+                <div class="labels" id="HeatMapLabel">
+                    <span>d3 Heat Map</span>
+                </div>
                 <a href="https://joeystip.github.io/d3HeatMap/">
-                    <img src="./Pictures/d3HeatMapScreenshot.png"/>
+                    <img id="HeatMap" src="./Pictures/d3HeatMapScreenshot.png"/>
                 </a>
             </div>
             <div class="projectPreview">
+                <div class="labels" id="CyclistDopingLabel">
+                    <span>d3 Cyclist Doping Scatterplot</span>
+                </div>
                 <a href="https://joeystip.github.io/CyclistDopingScatterplot/">
-                    <img src="./Pictures/d3CyclistDopingScreenshot.png"/>
+                    <img id="CyclistDoping" src="./Pictures/d3CyclistDopingScreenshot.png"/>
                 </a> 
             </div>
             <div class="projectPreview">
+                <div class="labels" id="DrumMachineLabel">
+                    <span>React Drum Machine</span>
+                </div>
                 <a href="https://joeystip.github.io/drum-machine/">
-                    <img src="./Pictures/DrumMachineScreenshot.png"/>
+                    <img id="DrumMachine" src="./Pictures/DrumMachineScreenshot.png"/>
                 </a>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>

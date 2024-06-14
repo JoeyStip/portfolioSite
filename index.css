@@ -31,6 +31,18 @@ body {
   height: 260px;
 }
 
+.labels {
+  font-size: large;
+  transform: translate(170px, -50px);
+  z-index: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  pointer-events: none;
+}
+
 #linkContainer {
   padding: 15px;
   display: grid;
@@ -47,6 +59,9 @@ body {
   }
   .projectPreview img {
     transform: translate(-20px, 0);
+  }
+  #linkContainer {
+    width: 95%;
   }
 }
 @media (max-width: 700px) {

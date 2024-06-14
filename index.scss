@@ -31,6 +31,18 @@ body {
     }
 }
 
+.labels {
+    font-size: large;
+    transform: translate(170px, -50px);
+    z-index: 1;
+    width: fit-content;
+    background-color: white;
+    border-radius: 5px;
+    padding:5px;
+    // opacity: 0;
+    pointer-events: none;
+}
+
 #linkContainer {
     padding: 15px;
     display: grid;
@@ -46,8 +58,10 @@ body {
         flex-direction: column;
     }
     .projectPreview img {
-        
         transform: translate(-20px, 0)
+    }
+    #linkContainer {
+        width: 95%;
     }
 }
 
