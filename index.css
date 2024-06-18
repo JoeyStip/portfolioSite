@@ -53,6 +53,28 @@ body {
   height: 100vh;
 }
 
+#bioContainer {
+  display: grid;
+  width: 75vw;
+  height: auto;
+  gap: 10px;
+  grid-template-columns: 1fr 3fr;
+}
+
+#coverLetter {
+  grid-column: 1/3;
+}
+
+#bottomCell {
+  grid-column: 1/3;
+}
+
+.bioCell {
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 #Bio > article {
   border: 1px solid black;
   width: 30vw;
