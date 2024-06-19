@@ -4,8 +4,9 @@
 }
 
 .scrollSpacer {
-  height: 30vh;
-  width: 10px;
+  height: 14vh;
+  width: 100vw;
+  position: relative;
 }
 
 html {
@@ -49,14 +50,15 @@ body {
 }
 
 #Bio {
-  transform: translate(0, 5vh);
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
+  margin: 0 auto;
 }
 
 #bioContainer {
+  margin: 0 auto;
   display: grid;
   width: 95vw;
   height: auto;
