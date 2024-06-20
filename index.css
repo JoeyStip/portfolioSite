@@ -53,7 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 90vh;
+  height: 85vh;
   margin: 0 auto;
 }
 
@@ -106,6 +106,14 @@ body {
 #Bio > article {
   border: 1px solid black;
   width: 30vw;
+}
+
+#socialsIconContainer {
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 #Portfolio {
