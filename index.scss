@@ -4,6 +4,12 @@
     // overflow-x: hidden;
 }
 
+$maya-blue: #82bdedff;
+$honeydew: #e4f2e4ff;
+$misty-rose: #f5e0e3ff;
+$melon: #ffb199ff;
+$timberwolf: #d6cac2ff;
+
 .scrollSpacer {
     height: 14vh;
     width: 100vw;
@@ -12,6 +18,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 130px;
 }
 
 header {
@@ -55,6 +62,7 @@ body {
     height:200vh;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 #Bio {
@@ -81,18 +89,23 @@ body {
 
 #education {
     grid-column: 1 / 2;
+    background-color: $maya-blue;
 }
 #certifications {
-    grid-column: 2 / 5
+    grid-column: 2 / 5;
+    background-color: $honeydew;
 }
 #coverLetter {
     grid-column: 1 / 5;
+    background-color: $melon;
 }
 #contact {
     grid-column: 1 / 4;
+    background-color: $misty-rose;
 }
 #socials {
     grid-column: 4 / 5;
+    background-color: $timberwolf;
 }
 
 .subtext {
@@ -142,11 +155,11 @@ a:hover {
 }
 
 #Portfolio {
-    position:absolute;
-    top: 100vh;
+    position:relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .projectPreview {
@@ -164,11 +177,8 @@ a:hover {
         // height: 250px;
         transition: opacity 350ms;
     }
-    // a {
-    //     width: 100vw;
-    // }
     img:hover {
-        opacity:0.7;
+        opacity:0.6;
     }
 }
 

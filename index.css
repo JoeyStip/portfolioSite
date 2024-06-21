@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 130px;
 }
 
 header {
@@ -54,6 +55,7 @@ body {
   height: 200vh;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 #Bio {
@@ -76,22 +78,27 @@ body {
 
 #education {
   grid-column: 1/2;
+  background-color: #82bded;
 }
 
 #certifications {
   grid-column: 2/5;
+  background-color: #e4f2e4;
 }
 
 #coverLetter {
   grid-column: 1/5;
+  background-color: #ffb199;
 }
 
 #contact {
   grid-column: 1/4;
+  background-color: #f5e0e3;
 }
 
 #socials {
   grid-column: 4/5;
+  background-color: #d6cac2;
 }
 
 .subtext {
@@ -138,11 +145,11 @@ a:hover {
 }
 
 #Portfolio {
-  position: absolute;
-  top: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
 }
 
 .projectPreview {
@@ -162,7 +169,7 @@ a:hover {
   transition: opacity 350ms;
 }
 .projectPreview img:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .labels {
