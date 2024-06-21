@@ -10,10 +10,8 @@ $misty-rose: #f5e0e3ff;
 $melon: #ffb199ff;
 $timberwolf: #d6cac2ff;
 
-.scrollSpacer {
-    height: 14vh;
-    width: 100vw;
-    position: relative;
+.bold {
+    font-weight: 1000;
 }
 
 html {
@@ -66,16 +64,13 @@ body {
 }
 
 #Bio {
-    // position: absolute;
-    // left: 150;
-    // width: 100vw; 
+    position: relative;
     display: flex;
     flex-direction: column;
-    // align-items: center;
     justify-content: center;
-    height: 90vh;
     margin: 0 auto;
     z-index: 0;
+    top: 10px;
 }
 
 #bioContainer {
@@ -205,9 +200,6 @@ a:hover {
 }
 
 @media (max-width: 1269px){
-    body {
-       
-    }
     .projectPreview img {
         transform: translate(-45px, 0)
     }
@@ -220,19 +212,24 @@ a:hover {
     #linkContainer {
         grid-template-columns: auto;
     }
-    .projectPreview img {
-        // height: 350px;
-        // transform: translate(100px, 0)
-    }
-    .projectPreview img:hover {
-        // height: 370px;
-    }
     header {
         flex-direction: column;
         height: auto;
+        align-items: center;
+        text-align: center;
     }
     .header {
         margin: 0;
     }
     
+}
+
+@media (max-width: 430px){
+    #Bio{
+        width: 100vw;
+    }
+    #contactContainer {
+        flex-direction: column;
+        align-items: baseline;
+    }
 }

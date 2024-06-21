@@ -3,10 +3,8 @@
   box-sizing: border-box;
 }
 
-.scrollSpacer {
-  height: 14vh;
-  width: 100vw;
-  position: relative;
+.bold {
+  font-weight: 1000;
 }
 
 html {
@@ -59,12 +57,13 @@ body {
 }
 
 #Bio {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 90vh;
   margin: 0 auto;
   z-index: 0;
+  top: 10px;
 }
 
 #bioContainer {
@@ -207,8 +206,19 @@ a:hover {
   header {
     flex-direction: column;
     height: auto;
+    align-items: center;
+    text-align: center;
   }
   .header {
     margin: 0;
+  }
+}
+@media (max-width: 430px) {
+  #Bio {
+    width: 100vw;
+  }
+  #contactContainer {
+    flex-direction: column;
+    align-items: baseline;
   }
 }/*# sourceMappingURL=index.css.map */
