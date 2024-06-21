@@ -16,6 +16,8 @@ $("img")
             .css("opacity", 1)
             .css("transform", "translate(" + halfWidth + "px,-50px)" )
             .css("width", width);
+
+        $("#" + event.target.id + "Container")
 })
     .mouseleave((event)=>{
         $("#" + event.target.id + "Label").css("opacity", 0);

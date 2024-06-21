@@ -213,10 +213,7 @@ a:hover {
     margin: 0;
   }
 }
-@media (max-width: 430px) {
-  #Bio {
-    width: 100vw;
-  }
+@media (max-width: 660px) {
   #contactContainer {
     flex-direction: column;
     align-items: baseline;
