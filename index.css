@@ -161,9 +161,6 @@ a:hover {
   width: 100vw;
   transition: opacity 350ms;
 }
-.projectPreview a {
-  width: 100vw;
-}
 .projectPreview img:hover {
   opacity: 0.7;
 }
@@ -190,7 +187,7 @@ a:hover {
 
 @media (max-width: 1269px) {
   .projectPreview img {
-    transform: translate(-20px, 0);
+    transform: translate(-45px, 0);
   }
   #linkContainer {
     width: 95%;
