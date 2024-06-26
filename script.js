@@ -7,7 +7,7 @@ $(document).ready(()=>{
 $(".projectPreview").mouseenter((event)=>{
     let id = event.target.id
     
-    console.log($(".projectPreview").children())
+    //console.log($(".projectPreview").children())
 })
 
 $("img")
@@ -15,6 +15,7 @@ $("img")
         // console.log(event)
         // cool idea: list projects out and have the whole background change to a screenshot
         // of the project site when you mouseover its item on the list
+        console.log(event.target, event.target.width)
         let width = event.target.width;
         let halfWidth = Math.round(width/2);
         // console.log(event.target)
