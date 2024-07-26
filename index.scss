@@ -1,13 +1,18 @@
 * {
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
+    
 }
 
-$maya-blue: #82bdedff;
-$honeydew: #e4f2e4ff;
-$misty-rose: #f5e0e3ff;
-$melon: #ffb199ff;
-$timberwolf: #d6cac2ff;
+$bioTile: #f7ede2;
+$eduTile: #f7ede2;
+$certTile: #f7ede2;
+$contactTile: #f7ede2;
+$SocialTile: #f7ede2;
+$bgColor: #84a59d;
+$titleText: #f6bd60;
+$boxText: black;
+$gridBorder: #f6bd60;
 
 .bold {
     font-weight: 1000;
@@ -16,12 +21,13 @@ $timberwolf: #d6cac2ff;
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 130px;
+    background-color: $bgColor;
 }
 
 header {
     position:sticky;
     z-index: 1;
-    background-color: white;
+    background-color: $bgColor;
     top:0;
     left: 0;
     width: 100vw;
@@ -32,6 +38,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 4vw 0 3vw;
+    color: $titleText;
     nav {
         margin: 35px;
     }
@@ -83,23 +90,23 @@ body {
 
 #education {
     grid-column: 1 / 2;
-    background-color: $maya-blue;
+    background-color: $eduTile;
 }
 #certifications {
     grid-column: 2 / 5;
-    background-color: $honeydew;
+    background-color: $certTile;
 }
 #coverLetter {
     grid-column: 1 / 5;
-    background-color: $melon;
+    background-color: $bioTile;
 }
 #contact {
     grid-column: 1 / 4;
-    background-color: $misty-rose;
+    background-color: $contactTile;
 }
 #socials {
     grid-column: 4 / 5;
-    background-color: $timberwolf;
+    background-color: $SocialTile;
 }
 
 .subtext {
@@ -118,7 +125,7 @@ body {
 }
 
 .bioCell {
-    border: solid 2px black;
+    border: solid 2px $gridBorder;
     border-radius: 5px;
     padding: 15px;
     height:auto;
