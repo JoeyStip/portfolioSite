@@ -93,6 +93,7 @@ body {
 #coverLetter {
   grid-column: 1/5;
   background-color: #ffffff;
+  text-align: center;
 }
 
 #contact {
@@ -180,7 +181,7 @@ a:hover {
   transition: opacity 350ms;
 }
 .projectPreview img:hover {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 .projectPreview div {
   border-radius: 5px;

@@ -103,6 +103,7 @@ body {
 #coverLetter {
     grid-column: 1 / 5;
     background-color: $secondaryColor;
+    text-align: center;
 }
 #contact {
     grid-column: 1 / 4;
@@ -187,10 +188,9 @@ a:hover {
         transition: opacity 350ms;
     }
     img:hover {
-        opacity:0.6;
+        opacity:0.4;
     }
     div {
-        //border: 5px solid $gridBorder;
         border-radius: 5px;
         text-align: center;   
     }
