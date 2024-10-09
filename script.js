@@ -22,8 +22,8 @@ $("img")
 
         $("#" + event.target.id + "Label")
             .css("opacity", 1)
-            .css("transform", "translate(" + halfWidth + "px,-50px)" )
-            .css("width", width);
+            // .css("transform", "translate(" + halfWidth + "px,-50px)" )
+            // .css("width", width);
 
         $("#" + event.target.id + "Container")
             //.css("grid-area", "1 / 3 / 1 / 1")

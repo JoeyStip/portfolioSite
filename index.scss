@@ -1,18 +1,19 @@
 * {
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
-    
 }
 
-$bioTile: #f7ede2;
-$eduTile: #f7ede2;
-$certTile: #f7ede2;
-$contactTile: #f7ede2;
-$SocialTile: #f7ede2;
-$bgColor: #84a59d;
-$titleText: #f6bd60;
+// $bioTile: #f7ede2;
+// $eduTile: #f7ede2;
+// $certTile: #f7ede2;
+// $contactTile: #f7ede2;
+// $SocialTile: #f7ede2;
+
+$titleText: black;
+$bgColor: #e5e5e5;
+$secondaryColor: #ffffff;
 $boxText: black;
-$gridBorder: #f6bd60;
+$gridBorder: #669bbc;
 
 .bold {
     font-weight: 1000;
@@ -21,11 +22,14 @@ $gridBorder: #f6bd60;
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 130px;
+}
+
+body {
     background-color: $bgColor;
 }
 
 header {
-    position:sticky;
+    position: sticky;
     z-index: 1;
     background-color: $bgColor;
     top:0;
@@ -90,23 +94,23 @@ body {
 
 #education {
     grid-column: 1 / 2;
-    background-color: $eduTile;
+    background-color: $secondaryColor;
 }
 #certifications {
     grid-column: 2 / 5;
-    background-color: $certTile;
+    background-color: $secondaryColor;
 }
 #coverLetter {
     grid-column: 1 / 5;
-    background-color: $bioTile;
+    background-color: $secondaryColor;
 }
 #contact {
     grid-column: 1 / 4;
-    background-color: $contactTile;
+    background-color: $secondaryColor;
 }
 #socials {
     grid-column: 4 / 5;
-    background-color: $SocialTile;
+    background-color: $secondaryColor;
 }
 
 .subtext {
@@ -160,22 +164,35 @@ a:hover {
     margin-top: 50px;
 }
 
-.projectPreview {
-    overflow: hidden;
-    width: auto;
-    height: 200px;
-    border: 3px solid black;
-    border-radius: 5px;
+#linkContainer {
+    padding: 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 100px;
+    width: 80%;
+    height: 90%;
+}
+
+.projectPreview {
+    // overflow: hidden;
+    width: 75%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
     justify-content: center;
     img {
         object-fit: contain;
-        width:100vw;
+        height: 35%;
         transition: opacity 350ms;
     }
     img:hover {
         opacity:0.6;
+    }
+    div {
+        //border: 5px solid $gridBorder;
+        border-radius: 5px;
+        text-align: center;   
     }
 }
 
@@ -189,14 +206,35 @@ a:hover {
     border: 1px solid black;
 }
 
-#linkContainer {
+footer {
+    width:100%;
+    background-color: white;
+    height: 150px;
+    position: relative;
+    bottom: -100px;
+    left:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 15px;
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    width: 80%;
-    gap: 3px;
+    a {
+        position: relative;
+        top: 20px;
+    }
+}
+
+#attributions {
+    width:350px;
+    height: 50px;
+    // border: black 1px solid;
+    position: relative;
+    // top: 45px;
+    // margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: small;
 }
 
 @media (max-width: 1269px){
@@ -210,7 +248,7 @@ a:hover {
 
 @media (max-width: 980px){
     #linkContainer {
-        grid-template-columns: auto;
+        // grid-template-columns: auto;
     }
     header {
         flex-direction: column;
@@ -223,9 +261,15 @@ a:hover {
     }
 }
 
-@media (max-width: 660px){
+@media (max-width: 520px){
     #contactContainer {
         flex-direction: column;
         align-items: baseline;
+    }
+    footer {
+        flex-direction: column;
+        height: 200px;
+        text-align: center;
+        align-items: center;
     }
 }
